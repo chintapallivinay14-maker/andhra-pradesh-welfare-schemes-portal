@@ -1,0 +1,44 @@
+
+/* App-level layout compatibility */
+#root {
+  min-height: 100vh;
+  width: 100%;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-group label {
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--text-main);
+}
+
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  box-shadow: var(--shadow-sm);
+}
+
+.status-eligible {
+  border-left: 4px solid var(--success);
+}
+
+.status-potential {
+  border-left: 4px solid #ca8a04;
+}
+
+.status-ineligible {
+  border-left: 4px solid #dc2626;
+}
+
+@media (max-width: 640px) {
+  .container {
+    padding: 24px 16px;
+  }
+}
